@@ -28,10 +28,13 @@ Name Recognition: Alongside the profile picture, the user's name is displayed in
 
 Enhanced User Engagement: By prominently featuring the user's profile picture and name in the header section, the platform encourages active engagement and interaction. Users feel acknowledged and connected to the platform, driving increased participation and loyalty over time
 
+3. Improvement in cart section:
+   In our cart section, users can effortlessly adjust item quantities with intuitive controls, making shopping a breeze. They can increase or decrease quantities with a simple click, tailoring their order to perfection. Additionally, a sleek delete icon allows for swift removal of unwanted items, ensuring a clutter-free and personalized shopping experience.
 
+   
 ## User Experience
 
-Enhancing UI with Tailwind CSS and React:
+#Enhancing UI with Tailwind CSS and React:
 
 Integration: Tailwind CSS can be seamlessly integrated into React projects using either traditional CSS imports or tools like craco or @craco/craco for Create React App projects. Once integrated, developers can apply Tailwind CSS utility classes directly to JSX elements within React components.
 
@@ -41,14 +44,24 @@ Responsive Design: Tailwind CSS utilities enable developers to create responsive
 
 State Management: React's state management capabilities, combined with Tailwind CSS styling, allow developers to create dynamic and interactive UIs. Components can respond to user interactions and update their state accordingly, triggering re-renders with updated styles and content.
 
-site link : 
+site link : https://ronak-affinidi-shopping-stackup.vercel.app/
 
 Images
 
 Home Page:
 
+![home page male](https://github.com/Ronak1257/Ronak_affinidi/assets/130481625/863c5221-f102-41fb-a166-5f3dc9b6e622)
+
 Cart Page:
+
+![cart](https://github.com/Ronak1257/Ronak_affinidi/assets/130481625/a5b1d31c-aa15-48a4-a4e0-97b1193e74c6)
 
 Checkout Page:
 
+![checkout page](https://github.com/Ronak1257/Ronak_affinidi/assets/130481625/b40dabe2-def8-462c-8c05-528b6acba7e4)
+
 other Images:
+
+![cart pop up](https://github.com/Ronak1257/Ronak_affinidi/assets/130481625/c226f6e6-e180-427b-8ba3-30790b9d6d83)
+
+![oreder submit pop up](https://github.com/Ronak1257/Ronak_affinidi/assets/130481625/a457e3c0-9f35-46b8-b905-9a595f5c4e83)
