@@ -20,6 +20,35 @@ Not Selected: In cases where the user has not specified their gender, our platfo
 
 This dynamic approach ensures that every user receives personalized clothing recommendations aligned with their unique style and preferences, enhancing the overall shopping experience.
 
+```
+const { gender } = useLocalContent();
+  const maleproducts = [
+    { id: 1, name: "Man Hoodie", price: 30, imageUrl: "man_hoodie.webp" },
+    { id: 2, name: "Man T-Shirt", price: 20, imageUrl: "man_tshirt.jpg" },
+    { id: 3, name: "Man Shirt", price: 25, imageUrl: "man_shirt.png" },
+  ];
+  const femaleproducts = [
+    { id: 4, name: "Female Hoodie", price: 25, imageUrl: "female_hoodie.jpg" },
+    { id: 5, name: "Female T-Shirt", price: 15, imageUrl: "female_tshirt.webp" },
+    
+  ];
+  let products=[];
+  const checkgen=()=>{
+    if (gender==="male") {
+      products=maleproducts;
+      return "Men's wear"
+    }
+    else if(gender==="female"){
+      products=femaleproducts;
+      return "Woman's wear"
+    }
+    else{
+      products=maleproducts.concat(femaleproducts);
+      return "Men's and Woman's wear"
+    }
+  }
+```
+
 2. Showing Name and Profile Picture in Header Section
 
 Profile Picture Display: The header prominently showcases the user's profile picture, providing a visual representation of their identity and personalization. This feature adds a human touch to the browsing experience, fostering a sense of connection between the user and the platform.
@@ -27,6 +56,20 @@ Profile Picture Display: The header prominently showcases the user's profile pic
 Name Recognition: Alongside the profile picture, the user's name is displayed in the header section. By acknowledging the user by name, the platform creates a personalized experience, reinforcing the user's identity and making them feel valued and recognized.
 
 Enhanced User Engagement: By prominently featuring the user's profile picture and name in the header section, the platform encourages active engagement and interaction. Users feel acknowledged and connected to the platform, driving increased participation and loyalty over time
+
+```
+if (isAuthenticated && user) {
+      return (
+        <div className="flex items-center">
+          <span className="mr-2.5 text-slate-700 text-2xl">Welcome,<b><i>{user.firstName}</i></b></span>
+          <div className="">
+            <img className=" object-cover rounded-3xl h-12 w-12 hover:shadow-sm hover:shadow-green-600" src={user.picture} alt="Profile" />
+          </div>
+          <button className="py-1.5 px-3 text-xl leading-1 rounded-xl  bg-blue-600 mx-4" onClick={logout}>Logout</button>
+        </div>
+      );
+    }
+```
 
 3. Improvement in cart section:
    In our cart section, users can effortlessly adjust item quantities with intuitive controls, making shopping a breeze. They can increase or decrease quantities with a simple click, tailoring their order to perfection. Additionally, a sleek delete icon allows for swift removal of unwanted items, ensuring a clutter-free and personalized shopping experience.
